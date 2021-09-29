@@ -8,7 +8,7 @@ function printPowsOf2(number) {
         for (let powOf2 = 2; powOf2 <= number; powOf2 <<= 1)
             result += ((powOf2 << 1) <= number) ? powOf2 + ', ' : powOf2;
     else 
-        result = '"incorrect type"'
+        result = '"incorrect type"';
 
     console.log(value + ' - ' + result);
 }
