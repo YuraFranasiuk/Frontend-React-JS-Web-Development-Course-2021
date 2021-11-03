@@ -5,8 +5,8 @@ function printPowsOf2(number) {
     value += (typeof number == 'string') ? '"' + number + '"' : number;
 
     if (typeof number == 'number')
-        for (let powOf2 = 2; powOf2 <= number; powOf2 <<= 1)
-            result += ((powOf2 << 1) <= number) ? powOf2 + ', ' : powOf2;
+        for (let powOf2 = 2; powOf2 <= number; powOf2 *= 2)
+            result += ((powOf2 * 2) <= number) ? powOf2 + ', ' : powOf2;
     else 
         result = '"incorrect type"';
 
